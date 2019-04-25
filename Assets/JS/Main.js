@@ -6,6 +6,7 @@ let urlSearchParams = new URLSearchParams(document.location.search)
 
 if (!document.location.host) {
 	isRunningLocally = true
+	console.warn('Main.js is running in local mode. Some features disabled.')
 }
 
 if (!isRunningLocally) { // Custom QuickLinks handler
