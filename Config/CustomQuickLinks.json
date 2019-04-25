@@ -1,10 +1,10 @@
 {
 	"test1": {
 		"type": "function",
-		"value": "alert(\"test1 cql\""
+		"value": "alert(\"test1 cql\")"
 	},
 	"test2": {
 		"type": "function",
-		"value": "alert(\"test2 cql\""
+		"value": "alert(\"test2 cql\")"
 	}
 }
