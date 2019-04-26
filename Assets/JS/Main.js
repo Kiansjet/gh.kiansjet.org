@@ -9,10 +9,33 @@ if (!document.location.host) {
 	console.warn('Main.js is running in local mode. Some features disabled.')
 }
 
-if (!isRunningLocally) { // Custom QuickLinks handler
+{ // Custom QuickLinks handler
 	let customQuickLinkString = urlSearchParams.get('cql')
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
 	if (customQuickLinkString) {
+		import customQuickLinksModule from 'Assets/JS/CustomQuickLinks.mjs'
+		let customQuickLink = customQuickLinksModule[customQuickLinkString]
+		if (customQuickLink) {
+			switch (typeof(customQuickLink)) {
+				default: {
+					console.error(`CustomQuickLink ${customQuickLinkString} was not a valid type. Will not be executed.`)
+					break
+				}
+				case 'function': {
+					try {
+						customQuickLink(customQuickLinkDataString)
+					} catch (error) {
+						console.error(`CustomQuickLink ${customQuickLinkString} failed to execute: ${error}`)
+					}
+					break
+				}
+				case 'string': {
+					document.location = customQuickLink
+					break
+				}
+			}
+		}
+		/* legacy json cql handler
 		$.getJSON('Config/CustomQuickLinks.json',function(data) {
 			let customQuickLink = data[customQuickLinkString]
 			if (customQuickLink) {
@@ -30,6 +53,7 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 				}
 			}
 		})
+		*/
 	}
 	// todo complete
 }
