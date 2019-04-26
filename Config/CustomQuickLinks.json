@@ -1,10 +1,10 @@
 {
 	"test1": {
 		"type": "function",
-		"value": "alert(\"test1 cql, customQuickLinkDataString is \" + customQuickLinkDataString)"
+		"value": "alert(`test1 cql`)"
 	},
 	"test2": {
 		"type": "function",
-		"value": "alert(\"test2 cql, customQuickLinkDataString is \" + customQuickLinkDataString)"
+		"value": "if (customQuickLinkDataString) {alert(`cql data string is ${customQuickLinkDataString}`)} else {alert(`cql data string is null`)}"
 	}
 }
