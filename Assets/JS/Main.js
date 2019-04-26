@@ -17,6 +17,8 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 			console.log('Custom Quick Links:')
 			console.log(data)
 			let customQuickLink = data[customQuickLink]
+			console.log('custom quick link is')
+			console.log(customQuickLink)
 			if (customQuickLink) {
 				switch (customQuickLink.type) {
 					case "function": // value is a function that will be ran with the customQuickLinkDataString argument
