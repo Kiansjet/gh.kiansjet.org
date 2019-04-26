@@ -13,7 +13,7 @@ if (!document.location.host) {
 	let customQuickLinkString = urlSearchParams.get('cql')
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
 	if (customQuickLinkString) {
-		let customQuickLinksModule = import('Assets/JS/CustomQuickLinks.mjs')
+		let customQuickLinksModule = import('/Assets/JS/CustomQuickLinks.mjs')
 		//import customQuickLinksModule from 'Assets/JS/CustomQuickLinks.mjs'
 		let customQuickLink = customQuickLinksModule[customQuickLinkString]
 		if (customQuickLink) {
