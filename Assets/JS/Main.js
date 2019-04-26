@@ -14,29 +14,9 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
 	if (customQuickLinkString) {
 		$.getJSON('Config/CustomQuickLinks.json',function(data) {
-			/*
 			console.log('Custom Quick Links:')
 			console.log(data)
 			let customQuickLink = data[customQuickLink]
-			console.log('custom quick link is')
-			console.log(customQuickLink)
-			if (customQuickLink) {
-				switch (customQuickLink.type) {
-					case "function": // value is a function that will be ran with the customQuickLinkDataString argument
-						try {
-							new Function(customQuickLink.value)(customQuickLinkDataString)
-						} catch {}
-						break
-					case "link": // value is a link that will be gone to.
-						document.location = customQuickLink.value
-						break
-				}
-			}
-			*/
-		}).done(function(data) {
-			console.log('Custom Quick Links:')
-			console.log(data)
-			let customQuickLink = data[customQuickLinkString]
 			console.log('custom quick link is')
 			console.log(customQuickLink)
 			if (customQuickLink) {
