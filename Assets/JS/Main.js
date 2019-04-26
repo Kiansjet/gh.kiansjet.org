@@ -24,7 +24,9 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 					case "function": // value is a function that will be ran with the customQuickLinkDataString argument
 						try {
 							new Function(customQuickLink.value)(customQuickLinkDataString)
-						} catch {}
+						} catch (error) {
+							console.error(`CustomQuickLink ${customQuickLinkString} failed to execute with given DataString:\n${customQuickLinkDataString}\nError: ${error}`)
+						}
 						break
 					case "link": // value is a link that will be gone to.
 						document.location = customQuickLink.value
