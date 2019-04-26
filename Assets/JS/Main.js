@@ -36,7 +36,7 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 		}).done(function(data) {
 			console.log('Custom Quick Links:')
 			console.log(data)
-			let customQuickLink = data[customQuickLink]
+			let customQuickLink = data[customQuickLinkString]
 			console.log('custom quick link is')
 			console.log(customQuickLink)
 			if (customQuickLink) {
