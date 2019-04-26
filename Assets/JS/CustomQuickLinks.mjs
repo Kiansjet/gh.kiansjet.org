@@ -1,4 +1,4 @@
-exports = {
+export default {
 	test1: function(data) {
 		alert('test1 cql')
 	},
