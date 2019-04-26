@@ -9,7 +9,7 @@ if (!document.location.host) {
 	console.warn('Main.js is running in local mode. Some features disabled.')
 }
 
-{ // Custom QuickLinks handler
+if (!isRunningLocally) { // Custom QuickLinks handler
 	let customQuickLinkString = urlSearchParams.get('cql')
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
 	if (customQuickLinkString) {
