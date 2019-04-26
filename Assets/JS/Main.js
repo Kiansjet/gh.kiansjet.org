@@ -14,6 +14,10 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
 	if (customQuickLinkString) {
 		$.getJSON('Config/CustomQuickLinks.json',function(data) {
+			data.promise.then(function(data) {
+				console.log('promise fuffiled')
+				console.log(data)
+			})
 			console.log('Custom Quick Links:')
 			console.log(data)
 			let customQuickLink = data[customQuickLink]
