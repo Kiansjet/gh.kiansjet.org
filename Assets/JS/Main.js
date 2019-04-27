@@ -13,8 +13,9 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 	let customQuickLinkString = urlSearchParams.get('cql')
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
 	if (customQuickLinkString) {
-		import('./CustomQuickLinks.mjs').then(function(mod) {
-			let customQuickLinksModule = mod
+		import('./CustomQuickLinks.mjs').then(function(customQuickLinksModule) {
+			console.log('cql module is')
+			console.log(customQuickLinksModule)
 			let customQuickLink = customQuickLinksModule[customQuickLinkString]
 			if (customQuickLink) {
 				switch (typeof(customQuickLink)) {
