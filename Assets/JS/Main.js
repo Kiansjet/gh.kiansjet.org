@@ -38,6 +38,24 @@ let util = {}
 	util.linkStylesheetToPage('Assets/CSS/Main.css')
 }
 
+if (!isRunningLocally) { // Import Google Analytics gtag.js
+	let trackingId = 'UA-139162099-1'
+	util.linkScriptToPage(`https://www.googletagmanager.com/gtag/js?id=${trackingId}`)
+
+	// Google wrote this idk what it does
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments)
+	}
+	gtag('js', new Date())
+	gtag('config', trackingId);
+}
+
+//
+// Above is all setup and prep
+// Below is all services
+//
+
 if (!isRunningLocally) { // Custom QuickLinks handler
 	let customQuickLinkString = urlSearchParams.get('cql')
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
@@ -70,28 +88,7 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 		}).catch(function(error) {
 			console.warn(`CustomQuickLinks.mjs failed to load: ${error}`)
 		})
-		
-		/* legacy json cql handler
-		$.getJSON('Config/CustomQuickLinks.json',function(data) {
-			let customQuickLink = data[customQuickLinkString]
-			if (customQuickLink) {
-				switch (customQuickLink.type) {
-					case "function": // value is a function that will be ran with the customQuickLinkDataString argument
-						try {
-							new Function(customQuickLink.value)(customQuickLinkDataString)
-						} catch (error) {
-							console.error(`CustomQuickLink ${customQuickLinkString} failed to execute with given DataString:\n${customQuickLinkDataString}\nError: ${error}`)
-						}
-						break
-					case "link": // value is a link that will be gone to.
-						document.location = customQuickLink.value
-						break
-				}
-			}
-		})
-		*/
 	}
-	// todo complete
 }
 
-console.log('main stack ran')
+console.log('Main.js completed.')
