@@ -13,9 +13,12 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 	let customQuickLinkString = urlSearchParams.get('cql')
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
 	if (customQuickLinkString) {
-		let customQuickLinksModule = import('./CustomQuickLinks.mjs')
-		console.log(customQuickLinksModule)
-		//import customQuickLinksModule from 'Assets/JS/CustomQuickLinks.mjs'
+		let customQuickLinksModule
+		import('./CustomQuickLinks.mjs').then(function(mod) {
+			customQuickLinksModule = mod
+		}).catch(function(error) {
+			console.warn(`CustomQuickLinks.mjs failed to load: ${error}`)
+		})
 		let customQuickLink = customQuickLinksModule[customQuickLinkString]
 		if (customQuickLink) {
 			switch (typeof(customQuickLink)) {
