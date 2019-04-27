@@ -13,33 +13,33 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 	let customQuickLinkString = urlSearchParams.get('cql')
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')
 	if (customQuickLinkString) {
-		let customQuickLinksModule
 		import('./CustomQuickLinks.mjs').then(function(mod) {
-			customQuickLinksModule = mod
+			let customQuickLinksModule = mod
+			let customQuickLink = customQuickLinksModule[customQuickLinkString]
+			if (customQuickLink) {
+				switch (typeof(customQuickLink)) {
+					default: {
+						console.error(`CustomQuickLink ${customQuickLinkString} was not a valid type. Will not be executed.`)
+						break
+					}
+					case 'function': {
+						try {
+							customQuickLink(customQuickLinkDataString)
+						} catch (error) {
+							console.error(`CustomQuickLink ${customQuickLinkString} failed to execute: ${error}`)
+						}
+						break
+					}
+					case 'string': {
+						document.location = customQuickLink
+						break
+					}
+				}
+			}
 		}).catch(function(error) {
 			console.warn(`CustomQuickLinks.mjs failed to load: ${error}`)
 		})
-		let customQuickLink = customQuickLinksModule[customQuickLinkString]
-		if (customQuickLink) {
-			switch (typeof(customQuickLink)) {
-				default: {
-					console.error(`CustomQuickLink ${customQuickLinkString} was not a valid type. Will not be executed.`)
-					break
-				}
-				case 'function': {
-					try {
-						customQuickLink(customQuickLinkDataString)
-					} catch (error) {
-						console.error(`CustomQuickLink ${customQuickLinkString} failed to execute: ${error}`)
-					}
-					break
-				}
-				case 'string': {
-					document.location = customQuickLink
-					break
-				}
-			}
-		}
+		
 		/* legacy json cql handler
 		$.getJSON('Config/CustomQuickLinks.json',function(data) {
 			let customQuickLink = data[customQuickLinkString]

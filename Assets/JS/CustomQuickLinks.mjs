@@ -8,5 +8,6 @@ export default {
 		} else {
 			console.log('test2 cql with no data')
 		}
-	}
+	},
+	test3: 'google.com',
 }
