@@ -1,5 +1,5 @@
 export default {
-	test1: function(data) {
+	test1: function() {
 		alert('test1 cql')
 	},
 	test2: function(data) {
