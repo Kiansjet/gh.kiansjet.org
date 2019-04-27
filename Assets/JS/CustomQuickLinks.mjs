@@ -9,5 +9,5 @@ export default {
 			console.log('test2 cql with no data')
 		}
 	},
-	test3: 'google.com',
+	test3: 'https://www.google.com',
 }
