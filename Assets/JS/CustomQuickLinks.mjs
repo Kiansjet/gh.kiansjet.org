@@ -1,13 +1,6 @@
 export default {
-	test1: function() {
-		alert('test1 cql')
+	echo: function() {
+		alert('echo!')
 	},
-	test2: function(data) {
-		if (data) {
-			console.log('test2 cql with data ' + data)
-		} else {
-			console.log('test2 cql with no data')
-		}
-	},
-	test3: 'https://www.google.com',
+	rootSite: 'https://kiansjet.org',
 }

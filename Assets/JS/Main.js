@@ -26,15 +26,21 @@ let util = {}
 			element.setAttribute('href',linkToStylesheet)
 		document.head.appendChild(element)
 	}
-	util.linkScriptToPage = function(linkToScript) {
+	util.linkScriptToPage = function(linkToScript,defer) {
+		defer = defer || false
 		let element = document.createElement('script')
-			element.setAttribute('async',true)
+			element.setAttribute('async',!defer || true)
+			element.setAttribute('defer',defer)
 			element.setAttribute('src',linkToScript)
 		document.head.appendChild(element)
 	}
 }
 
-{ // Import Main.css
+{ // Import Main.css and fonts its dependent on
+	// Lato Google Font
+	util.linkStylesheetToPage('https://fonts.googleapis.com/css?family=Lato:400,900&subset=latin-ext')
+	
+	// Main.css
 	util.linkStylesheetToPage('Assets/CSS/Main.css')
 }
 
