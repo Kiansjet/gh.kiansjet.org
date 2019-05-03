@@ -6,28 +6,16 @@
 async function main() {
 	// Globals
 	let isRunningLocally = false
+	let util = {}
+	let scriptsLoadedPromise
 
 	if (!document.location.host) {
 		isRunningLocally = true
 		console.warn('Main.js is running in local mode. Some features disabled.')
 	}
-	
-	{ // jQuery is awesome. Lets get it, shall we? Srsly tho everything relies on jQuery lol.
-		await new Promise(function(resolve,reject) {
-			let element = document.createElement('script')
-				element.setAttribute('src','https://code.jquery.com/jquery-3.4.0.min.js')
-				element.setAttribute('integrity','sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=')
-				element.setAttribute('crossorigin','anonymous')
-			document.head.appendChild(element)
-			element.onload = resolve
-			element.onerror = reject
-		})
-		console.log('jQuery loaded')
-	}
 
-	console.time('Main.js utility object population')
-	let util = {}
-	{ // Utility functions
+	console.time('Main.js pre-jQuery utility object population')
+	{ // Utility functions that don't need jQuery
 		util.linkStylesheetToPage = function(linkToStylesheet,integrity,crossorigin) {
 			let element = document.createElement('link')
 				element.setAttribute('rel','stylesheet')
@@ -83,10 +71,16 @@ async function main() {
 			})
 		}
 	}
-	console.timeEnd('Main.js utility object population')
+	console.timeEnd('Main.js pre-jQuery utility object population')
 
 	{ // Import particular scripts and stylesheets in order
-		util.linkScriptsToPage([
+		scriptsLoadedPromise = util.linkScriptsToPage([
+			{
+				// jQuery
+				src: 'https://code.jquery.com/jquery-3.4.0.min.js',
+				integrity: 'sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=',
+				crossorigin: 'anonymous'
+			},
 			{
 				// Popper.js
 				src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
