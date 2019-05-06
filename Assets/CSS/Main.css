@@ -1,3 +1,5 @@
 /* Base CSS stylesheet for every page on the site (page specific css sheets should override) */
 
-
+body {
+	margin: 8px; /* This is the default value but I set it as sort of a reminder */
+}
