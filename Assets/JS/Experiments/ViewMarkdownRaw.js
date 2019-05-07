@@ -21,7 +21,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-if (!!isRunningLocally) { // Check search param and load markdown file if exists
+if (!isRunningLocally) { // Check search param and load markdown file if exists
 	let urlSearchParams = new URLSearchParams(document.location.search)
 	let markdownDocument = urlSearchParams.get('doc')
 	if (markdownDocument) {
