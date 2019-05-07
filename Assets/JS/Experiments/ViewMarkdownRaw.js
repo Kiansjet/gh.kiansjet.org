@@ -56,3 +56,15 @@ if (!isRunningLocally) { // Check search param and load markdown file if exists
 } else {
 	console.warn('ViewMarkdownRaw.js is running in local mode. Markdown loader disabled.')
 }
+
+// TEMP markdown tester
+if (isRunningLocally && false) {
+	let data = '# Header 1\n# Header 2'
+
+	let markdownConverter = new showdown.Converter()
+	//markdownConverter.setOption() // API available at https://github.com/showdownjs/showdown
+	let html = markdownConverter.makeHtml(data)
+	$.ready.then(function() {
+		$(document.body).prepend(html)
+	})
+}
