@@ -33,15 +33,13 @@ if (!isRunningLocally) { // Check search param and load markdown file if exists
 		}
 
 		// Attempt to fetch the supposed markdown file
-		$.get(`Assets/Markdown/${markdownDocument}`).done(function(data,status) {
+		$.get(`/Assets/Markdown/${markdownDocument}`).done(function(data,status) {
 			console.log('markdown fetched')
 			console.log(data)
 			console.log(status)
-		}).fail(function(jqxhr,status,error) {
+		}).fail(function(jqxhr) {
 			console.log('markdown fetch failed')
 			console.log(jqxhr)
-			console.log(status)
-			console.log(error)
 		})
 
 	} else {
