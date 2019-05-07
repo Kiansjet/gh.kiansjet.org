@@ -17,8 +17,22 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- Main.js -->
 	<script src="Assets/JS/Main.js"></script>
+
+	<!-- Page Specific -->
+	<!-- Embedded script because gh pages is wonky -->
+	<script>
+		// Check if the 404 page is directly shown or as proxy for another page
+		if (!document.location.pathname.endsWith('404.html')) {
+			// Direct to the 404 page and forward search params/document hash
+			let searchParams = new URLSearchParams()
+			searchParams.append('attemptedUrl',document.location.href)
+			document.location = `${document.location.origin}/404.html?${searchParams.toString()}`
+		}
+	</script>
 </head>
 
 <body>
-	<h1>Custom 404 page</h1>
+	<h1>oof thats a clean 404</h1>
+	<h3>so either im reeeeeeeeeeeeealy bad at this whole make a website thing or ur even worse lmao</h3>
+	<p>Click <a href="https://gh.kiansjet.org">here</a> to go to the home page.</p>
 </body>
