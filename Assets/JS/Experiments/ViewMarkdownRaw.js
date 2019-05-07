@@ -37,6 +37,14 @@ if (!isRunningLocally) { // Check search param and load markdown file if exists
 			console.log('markdown fetched')
 			console.log(data)
 			console.log(status)
+
+			let markdownConverter = new showdown.Converter()
+			//markdownConverter.setOption() // API available at https://github.com/showdownjs/showdown
+			let html = markdownConverter.makeHtml(data)
+			$.ready.then(function() {
+				$('.markdownContainer').prepend(html)
+			})
+
 		}).fail(function(jqxhr) {
 			console.log('markdown fetch failed')
 			console.log(jqxhr)
