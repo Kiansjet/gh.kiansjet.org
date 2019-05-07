@@ -45,9 +45,8 @@ if (!isRunningLocally) { // Check search param and load markdown file if exists
 		})
 
 	} else {
-		$(document.body).prepend('?doc search parameter not set.')
+		console.warn('?doc search parameter not set.')
 	}
 } else {
 	console.warn('ViewMarkdownRaw.js is running in local mode. Markdown loader disabled.')
-	$(document.body).prepend('ViewMarkdownRaw.js is running in local mode. Markdown loader disabled.')
 }
