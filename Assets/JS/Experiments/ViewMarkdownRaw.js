@@ -34,9 +34,9 @@ if (!isRunningLocally) { // Check search param and load markdown file if exists
 
 		// Attempt to fetch the supposed markdown file
 		$.get(`/Assets/Markdown/${markdownDocument}`).done(function(data,status) {
-			console.log('markdown fetched')
-			console.log(data)
-			console.log(status)
+			//console.log('markdown fetched')
+			//console.log(data)
+			//console.log(status)
 
 			let markdownConverter = new showdown.Converter()
 			//markdownConverter.setOption() // API available at https://github.com/showdownjs/showdown
@@ -46,12 +46,14 @@ if (!isRunningLocally) { // Check search param and load markdown file if exists
 			})
 
 		}).fail(function(jqxhr) {
-			console.log('markdown fetch failed')
-			console.log(jqxhr)
+			$.ready.then(function() {
+				$('.markdownContainer').prepend('<h1>Document not found.</h1>')
+			})
+			console.error(`markdown fetch failed with jqxhr: ${JSON.stringify(jqxhr)}`)
 		})
 
 	} else {
-		console.warn('?doc search parameter not set.')
+		console.error('?doc search parameter not set.')
 	}
 } else {
 	console.warn('ViewMarkdownRaw.js is running in local mode. Markdown loader disabled.')
