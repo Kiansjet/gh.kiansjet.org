@@ -1,2 +1,13 @@
 /* Base CSS stylesheet for every page on the site (page specific css sheets should override) */
 
+/* Default font stack override (https://getbootstrap.com/docs/4.3/content/reboot/#native-font-stack) */
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,400,400i,700,700i,900,900i&subset=latin-ext');
+
+body {
+	font-family: 'Nunito',sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-weight: 700;
+}
