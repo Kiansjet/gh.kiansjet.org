@@ -11,3 +11,22 @@ h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6 {
 	font-weight: 700;
 }
+
+/* Bootstrap success button theme color override */
+.btn-outline-success {
+	color: #43b581;
+	border-color: #43b581;
+
+}
+
+.btn-outline-success:hover {
+	background-color: #43b581;
+}
+
+.btn-outline-success:active {
+	background-color: #43b581 !important;
+}
+
+.btn-outline-success:focus {
+	
+}
