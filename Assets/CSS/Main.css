@@ -12,6 +12,14 @@ h1,h2,h3,h4,h5,h6,
 	font-weight: 700;
 }
 
+/* Bootstrap-like additions */
+
+@media (min-width: 768px) {
+	.position-fixed-md {
+		position: fixed!important;
+	}
+}
+
 /* Bootstrap success button theme color override */
 .btn-outline-success {
 	color: #43b581;
