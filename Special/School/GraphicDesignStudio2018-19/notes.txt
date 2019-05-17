@@ -1,0 +1,19 @@
+need 10
+
+S1
+
+TypeSpecimenPoster
+EraPoster
+Halloween Poster
+Color
+-----------------------
+
+S2
+
+Portrait Carving
+Travel Postcard
+Buttons
+BDay Card
+Album Project
+Social Issue
+----------------------------
