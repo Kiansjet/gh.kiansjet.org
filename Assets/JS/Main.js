@@ -9,8 +9,8 @@ if (!document.location.host) {
 	console.warn('Main.js is running in local mode. Some features disabled.')
 }
 
-console.time('Main.js pre-jQuery utility object population')
-{ // Utility functions that don't need jQuery
+console.time('Main.js utility object population')
+{ // Utility functions
 	util.linkStylesheetToPage = function(linkToStylesheet,integrity,crossorigin) {
 		let element = document.createElement('link')
 			element.setAttribute('rel','stylesheet')
@@ -66,7 +66,7 @@ console.time('Main.js pre-jQuery utility object population')
 		})
 	}
 }
-console.timeEnd('Main.js pre-jQuery utility object population')
+console.timeEnd('Main.js utility object population')
 
 if (!isRunningLocally) { // Import Google Analytics gtag.js
 	let trackingId = 'UA-139162099-1'
@@ -122,6 +122,29 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 	}
 } else {
 	console.warn('Main.js is running in local mode. Custom Quick Links disabled.')
+}
+
+{ // Image loading with initial low quality images
+	// Heavy credit to https://css-tricks.com/the-blur-up-technique-for-loading-background-images/
+	$(document).ready(function() {
+		$('img').each(function() {
+			let img = this
+			let highQualityImageSrc = $(img).attr('x-kian-highQualitySrc')
+			if (highQualityImageSrc) {
+				let highQualityImage = new Image()
+				highQualityImage.src = highQualityImageSrc
+				highQualityImage.addEventListener('load',function onload() {
+					highQualityImage.removeEventListener('load',onload)
+					console.log('loaded')
+					$(img).attr('src',highQualityImageSrc)
+					$(img).removeClass('low-quality')
+					$(img).addClass('high-quality')
+					highQualityImage.remove()
+				})
+
+			}
+		})
+	})
 }
 
 console.log('Main.js completed.')

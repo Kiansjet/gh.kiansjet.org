@@ -44,3 +44,21 @@ h1,h2,h3,h4,h5,h6,
 .btn-outline-success:focus {
 	
 }
+
+/* Image loading with initial low quality images */
+@keyframes unblurImage {
+	from {filter: blur(2px)}
+	to {filter: blur(0px)}
+}
+@keyframes blurImage {
+	from {filter: blur(0px)}
+	to {filter: blur(2px)}
+}
+
+img.low-quality {
+	animation: blurImage .5s both;
+}
+
+img.high-quality {
+	animation: unblurImage .5s both;
+}
