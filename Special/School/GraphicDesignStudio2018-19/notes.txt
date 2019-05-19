@@ -3,17 +3,65 @@ need 10
 S1
 
 TypeSpecimenPoster
+header full: https://drive.google.com/uc?export=download&id=1BIFY5Czv0WBMfRTe09Hy9-r31W6JnDdC
+header prev: https://drive.google.com/uc?export=download&id=1kYOVBOfn7pKdD3hlhhl8LXGhBBH2Hp6Y
+complete full: 
+complete prev: 
+
 EraPoster
+header full: https://drive.google.com/uc?export=download&id=1HQzOcxshISlqUQOiaVvNEVZcrIMsBNNm
+header prev: https://drive.google.com/uc?export=download&id=1ro5hrRrSsQUmrOGlG5Hd0VYi2xQQ9Eoi
+complete full: 
+complete prev: 
+
 Halloween Poster
+header full: 
+header prev: 
+complete full: 
+complete prev: 
+
 Color
+header full: 
+header prev: 
+complete full: 
+complete prev: 
 -----------------------
 
 S2
 
 Portrait Carving
+header full: 
+header prev: 
+complete full: 
+complete prev: 
+
 Travel Postcard
+header full: 
+header prev: 
+complete full: 
+complete prev: 
+
 Buttons
+header full: 
+header prev: 
+complete full: 
+complete prev: 
+
 BDay Card
+header full: 
+header prev: 
+complete full: 
+complete prev: 
+
 Album Project
+header full: 
+header prev: 
+complete full: 
+complete prev: 
+
 Social Issue
+header full: 
+header prev: 
+complete full: 
+complete prev: 
 ----------------------------
