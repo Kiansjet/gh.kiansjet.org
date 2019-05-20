@@ -3,24 +3,28 @@ need 10
 S1
 
 TypeSpecimenPoster
+created: Oct. 17, 2018
 header full: https://drive.google.com/uc?export=download&id=1BIFY5Czv0WBMfRTe09Hy9-r31W6JnDdC
 header prev: https://drive.google.com/uc?export=download&id=1kYOVBOfn7pKdD3hlhhl8LXGhBBH2Hp6Y
 complete full: 
 complete prev: 
 
 EraPoster
+created: Nov. 13, 2018
 header full: https://drive.google.com/uc?export=download&id=1HQzOcxshISlqUQOiaVvNEVZcrIMsBNNm
 header prev: https://drive.google.com/uc?export=download&id=1ro5hrRrSsQUmrOGlG5Hd0VYi2xQQ9Eoi
 complete full: 
 complete prev: 
 
 Halloween Poster
+created: Oct. 10, 2018
 header full: 
 header prev: 
 complete full: 
 complete prev: 
 
 Color
+created: Dec. 12, 2018
 header full: 
 header prev: 
 complete full: 
@@ -29,37 +33,43 @@ complete prev:
 
 S2
 
-Portrait Carving
+Portrait Carving BACKUP DO ZINE
+created: 
 header full: 
 header prev: 
 complete full: 
 complete prev: 
 
 Travel Postcard
+created: Feb. 22, 2019
 header full: 
 header prev: 
 complete full: 
 complete prev: 
 
 Buttons
+created: Mar. 11, 2019
 header full: 
 header prev: 
 complete full: 
 complete prev: 
 
 BDay Card
+created: Mar. 13, 2019
 header full: 
 header prev: 
 complete full: 
 complete prev: 
 
 Album Project
+created: Mar. 27, 2019
 header full: 
 header prev: 
 complete full: 
 complete prev: 
 
-Social Issue
+Social Issue Pamphlet
+created: May 7, 2017
 header full: 
 header prev: 
 complete full: 
