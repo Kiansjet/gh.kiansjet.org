@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<!-- Using https://podba.se/validate/ to validate and conforming to RSS 2.0 spec: https://cyber.harvard.edu/rss/rss.html -->
+	<channel>
+		<!-- Mandatory elements per Harvard spec -->
+		<title>Whatever You Say</title>
+		<link></link>
+		<description></description> <!-- Should be identical to <itunes:summary> -->
+
+		<!-- Mandatory elements per Apple spec -->
+		<author></author>
+		<itunes:category></itunes:category>
+		<itunes:summary></itunes:summary> <!-- Should be identical to <description> -->
+
+		<!-- Optional elements per Harvard spec -->
+		<language>en-us</language>
+		<webMaster>kianmahmoudi@outlook.com (Kian M)</webMaster>
+		
+		<!-- Episodes/Items -->
+		<item>
+			<title></title>
+			<author></author>
+			<description></description>
+			<enclosure></enclosure>
+		</item>
+	</channel>
+</rss>
