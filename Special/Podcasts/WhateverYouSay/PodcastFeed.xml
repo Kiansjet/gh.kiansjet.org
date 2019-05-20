@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<!-- Using https://podba.se/validate/ to validate and conforming to RSS 2.0 spec: https://cyber.harvard.edu/rss/rss.html -->
 	<channel>
 		<!-- Mandatory elements per Harvard spec -->
