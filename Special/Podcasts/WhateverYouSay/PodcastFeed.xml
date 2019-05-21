@@ -6,7 +6,7 @@
 		<!-- Podcast-level config -->
 		<title>Whatever You Say</title>
 		<description>A group of friends talk about various topics. Very bland description, I know.</description> <!-- Should be identical to <itunes:summary> -->
-		<itunes:image href="https://drive.google.com/uc?export=download&id=1_7mJZnCTwLQ3D448vMLqv3Fp0p4wFm8H"/>
+		<itunes:image href="https://drive.google.com/uc?export=download&amp;id=1_7mJZnCTwLQ3D448vMLqv3Fp0p4wFm8H"/>
 		<language>en-us</language>
 		<itunes:category text="Society &amp; Culture">
 			<itunes:category text="History"></itunes:category>
