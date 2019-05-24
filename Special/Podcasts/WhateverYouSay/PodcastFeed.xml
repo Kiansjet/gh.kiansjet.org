@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
 	<!-- Using https://podba.se/validate/ to validate and conforming to RSS 2.0 spec: https://cyber.harvard.edu/rss/rss.html -->
+	<!-- Direct Apple Podcast spec at https://help.apple.com/itc/podcasts_connect/#/itcb54353390 -->
 	<channel>
-		<!-- Mandatory elements per Harvard spec -->
+		<!-- Podcast-level config -->
 		<title>Whatever You Say</title>
-		<link></link>
-		<description></description> <!-- Should be identical to <itunes:summary> -->
-
-		<!-- Mandatory elements per Apple spec -->
-		<author></author>
-		<itunes:category></itunes:category>
-		<itunes:summary></itunes:summary> <!-- Should be identical to <description> -->
-
-		<!-- Optional elements per Harvard spec -->
+		<description>A group of friends talk about various topics. Very bland description, I know.</description> <!-- Should be identical to <itunes:summary> -->
+		<itunes:image href="https://gh.kiansjet.org/Special/Podcasts/WhateverYouSay/WhateverYouSayIcon1-3000.png"/>
 		<language>en-us</language>
-		<webMaster>kianmahmoudi@outlook.com (Kian M)</webMaster>
+		<itunes:category text="Society &amp; Culture">
+			<itunes:category text="History"></itunes:category>
+			<itunes:category text="Personal Journals"></itunes:category>
+			<itunes:category text="Philosophy"></itunes:category>
+			<itunes:category text="Places &amp; Travel"></itunes:category>
+		</itunes:category>
+		<itunes:category text="News &amp; Politics">
+
+		</itunes:category>
+		<itunes:category text="Comedy">
+
+		</itunes:category>
+		<itunes:category text="TV &amp; Film">
+
+		</itunes:category>
+		<itunes:category text="Technology">
+			<itunes:category text="Gadgets"></itunes:category>
+			<itunes:category text="Tech News"></itunes:category>
+			<itunes:category text="Podcasting"></itunes:category>
+			<itunes:category text="Software How-To"></itunes:category>
+		</itunes:category>
+		<itunes:category text="Science &amp; Medicine">
+			<itunes:category text="Social Sciences"></itunes:category>
+		</itunes:category>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:author></itunes:author>
+		<link>https://sites.google.com/view/kian-wys-podcast-holding-page/home</link>
+		<itunes:owner>
+			<itunes:name>Kian M</itunes:name>
+			<itunes:email>kianmahmoudi@outlook.com</itunes:email>
+		</itunes:owner>
+		<itunes:type>episodic</itunes:type>
+		<copyright></copyright>
+
+		<itunes:keywords></itunes:keywords>
 		
 		<!-- Episodes/Items -->
 		<item>
-			<title></title>
+			<itunes:title></itunes:title>
 			<author></author>
 			<description></description>
-			<enclosure></enclosure>
+			<enclosure  />
 		</item>
 	</channel>
 </rss>
