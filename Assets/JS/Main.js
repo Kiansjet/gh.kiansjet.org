@@ -65,6 +65,35 @@ console.time('Main.js utility object population')
 			loadScript()
 		})
 	}
+	util.dynamicallyLoadImage = function(imageElement) {
+		let completionDeferred = $.Deferred()
+		let highQualityImageSrc = $(imageElement).attr('x-kian-highqualitysrc')
+		if (highQualityImageSrc) {
+			let highQualityImage = new Image()
+			highQualityImage.src = highQualityImageSrc
+			highQualityImage.addEventListener('load',function onload() {
+				highQualityImage.removeEventListener('load',onload)
+				console.log('loaded')
+				$(imageElement).attr('src',highQualityImageSrc)
+				$(imageElement).removeClass('low-quality')
+				$(imageElement).addClass('high-quality')
+				highQualityImage.remove()
+				completionDeferred.resolve()
+			})
+		} else {
+			completionDeferred.resolve()
+		}
+		return completionDeferred
+	}
+	util.createDynamicallyLoadingImage = function(parentElement,lowQualitySrc,highQualitySrc) {
+		let element = document.createElement('img')
+		$(element).addClass('low-quality')
+		$(element).attr('src',lowQualitySrc)
+		$(element).attr('x-kian-highqualitysrc',highQualitySrc)
+		$(parentElement).append(element)
+		let completionDeferred = util.dynamicallyLoadImage(element)
+		return {element,completionDeferred}
+	}
 }
 console.timeEnd('Main.js utility object population')
 
@@ -126,23 +155,10 @@ if (!isRunningLocally) { // Custom QuickLinks handler
 
 { // Image loading with initial low quality images
 	// Heavy credit to https://css-tricks.com/the-blur-up-technique-for-loading-background-images/
+	
 	$(document).ready(function() {
 		$('img').each(function() {
-			let img = this
-			let highQualityImageSrc = $(img).attr('x-kian-highQualitySrc')
-			if (highQualityImageSrc) {
-				let highQualityImage = new Image()
-				highQualityImage.src = highQualityImageSrc
-				highQualityImage.addEventListener('load',function onload() {
-					highQualityImage.removeEventListener('load',onload)
-					console.log('loaded')
-					$(img).attr('src',highQualityImageSrc)
-					$(img).removeClass('low-quality')
-					$(img).addClass('high-quality')
-					highQualityImage.remove()
-				})
-
-			}
+			util.dynamicallyLoadImage(this)
 		})
 	})
 }
