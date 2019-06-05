@@ -13,65 +13,61 @@ EraPoster
 created: Nov. 13, 2018
 header full: https://drive.google.com/uc?export=download&id=1HQzOcxshISlqUQOiaVvNEVZcrIMsBNNm
 header prev: https://drive.google.com/uc?export=download&id=1ro5hrRrSsQUmrOGlG5Hd0VYi2xQQ9Eoi
-complete full: 
-complete prev: 
+complete full: https://drive.google.com/uc?export=download&id=1X8Ulpj4prfx76fSky7YirGx8E5mp8mhR
+complete prev: https://drive.google.com/uc?export=download&id=1ndrXmU0ugLNWrJchbJFru9HGH5H0thCw
 
 Halloween Poster
 created: Oct. 10, 2018
-header full: 
-header prev: 
-complete full: 
-complete prev: 
+header full: https://drive.google.com/uc?export=download&id=1M5kwVfyOH-TGY6O07PhLTwZUrjQoeLJh
+header prev: https://drive.google.com/uc?export=download&id=1sqtcrAqL0TC93EGgKTTbRP2ix8RBNm0O
+complete full: https://drive.google.com/uc?export=download&id=1CHWBXCpPUWurL8D1yZm60kB0xxn3eQdR
+complete prev: https://drive.google.com/uc?export=download&id=1JyxWhQpDC0xiwMaPDLY7DaHEsUlsSOIT
 
 Color
 created: Dec. 12, 2018
-header full: 
-header prev: 
-complete full: 
-complete prev: 
+header full: https://drive.google.com/uc?export=download&id=1eLt1NFeT-8XpYBXX6r5XOpIzL3I-JlCu
+header prev: https://drive.google.com/uc?export=download&id=1Oan5iRLFczoeN7iDG40w540mdsMxAVY6
+complete full: https://drive.google.com/uc?export=download&id=1owNzl-RfwErqCdzwxSw6wSfwsWYS-f83
+complete prev: https://drive.google.com/uc?export=download&id=1BKF6PYXjLov1Qd5I-Nf2tW2kLOTNzkT2
 -----------------------
 
 S2
 
-Portrait Carving BACKUP DO ZINE
-created: 
-header full: 
-header prev: 
-complete full: 
-complete prev: 
-
 Travel Postcard
 created: Feb. 22, 2019
-header full: 
-header prev: 
-complete full: 
-complete prev: 
+header full: https://drive.google.com/uc?export=download&id=1MDP30iO__4jwr_2fVpyKftsl2_Leg7u_
+complete full: https://drive.google.com/uc?export=download&id=1p6qaZXzSsZ8SnAwoTqvjMM4eKsNqwHej
+BOTH prev: https://drive.google.com/uc?export=download&id=1IX7Ce_brebS-mQfFT9_bwE2icgYT-rk4
 
 Buttons
 created: Mar. 11, 2019
-header full: 
-header prev: 
-complete full: 
-complete prev: 
+header full: https://drive.google.com/uc?export=download&id=11FN3RJk-iOXS0lpZVJIA2yjQA2U94m6D
+complete full: https://drive.google.com/uc?export=download&id=16oursevRR3S0zYVU0rvVV2p5bWPZwK5N
+BOTH prev: https://drive.google.com/uc?export=download&id=1OpotVv-1Xd2S2ZSgnsiJddePPthkW0Ke
 
 BDay Card
-created: Mar. 13, 2019
-header full: 
-header prev: 
-complete full: 
-complete prev: 
+created: Mar. 20, 2019
+header full: https://drive.google.com/uc?export=download&id=1nmq3C7LAgWP_QICjK9neI9v-PGJ-Kd50
+header prev: https://drive.google.com/uc?export=download&id=1RVZqHl75OfXFyg3wGmn-ZHyaboMJQ2l7
+complete full: https://drive.google.com/uc?export=download&id=1VjSSwwU7X1nnwnbedZ2JkscMn3F1LuXf
+complete prev: https://drive.google.com/uc?export=download&id=19ih5-3hUPZ1M7HjkCkD7H_CMj1LhDGXW
 
 Album Project
-created: Mar. 27, 2019
-header full: 
-header prev: 
-complete full: 
-complete prev: 
+created: Apr. 22, 2019
+header full: https://drive.google.com/uc?export=download&id=1rfUqUn_LmJvNsbYIFmXW1oJUgetmkweB
+complete full: https://drive.google.com/uc?export=download&id=183ZcizGHRo3U4j28gI8Naz4gItNHzYR0
+BOTH prev: https://drive.google.com/uc?export=download&id=1acev6srvWlSYieOXy1ASQxPEw0dA8mo3
 
 Social Issue Pamphlet
-created: May 7, 2017
-header full: 
-header prev: 
-complete full: 
-complete prev: 
+created: May 10, 2019
+header full: https://drive.google.com/uc?export=download&id=1BODASbJm3nhiKti0DtiK-lFcOGair-0_
+header prev: https://drive.google.com/uc?export=download&id=17-OZvFM4awOWbkgOuhuLlHBITBmVOYVn
+complete full: https://drive.google.com/uc?export=download&id=1mN7IDlwiH7vBkdWfYBSRrCjQTrn6Gdo4
+complete prev: https://drive.google.com/uc?export=download&id=1tmAu9nvTktgA6RK-k0DiPd6M1Qw6LMaX
+
+Zine
+created: June 3, 2019
+header full: https://drive.google.com/uc?export=download&id=1V9KMV0q9ojMILeo5h9MYgo_huBp-U4wX
+header prev: https://drive.google.com/uc?export=download&id=1Fiqw-2BEq4-ZdktVV6OXMbEQFCYXidiw
+complete full: https://drive.google.com/file/d/1RwYM7Zu_eqv6xZRZh-JbEiqFYB94dPWy/preview
 ----------------------------

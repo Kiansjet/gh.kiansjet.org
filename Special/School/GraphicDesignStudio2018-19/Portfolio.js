@@ -4,9 +4,10 @@
 let fullImageViewModal = $('#fullImageViewModal')
 
 $(document).ready(function () {
-	$('#fullImageViewModal .close').click(function() {
+	$('#fullImageViewModal').on('hidden.bs.modal',function() {
 		$('#fullImageViewModal .modal-body').empty()
 	})
+
 	$('.card').click(function() {
 		let card = $(this)
 		let lowQualitySrc = card.data('fulllowqualitysrc')
@@ -21,5 +22,9 @@ $(document).ready(function () {
 		imageData.completionDeferred.then(function() {
 			$('#fullImageViewModal .spinner-border').css('display','none')
 		})
+	})
+
+	$('#zinecard').click(function() {
+		window.open('https://drive.google.com/file/d/1RwYM7Zu_eqv6xZRZh-JbEiqFYB94dPWy/preview','_blank')
 	})
 })

@@ -33,9 +33,9 @@ h1,h2,h3,h4,h5,h6,
 	
 }
 
-/* -----/Bootsrap overrides/-----
+/* -----/Bootsrap overrides/----- */
 
-/* ----- Bootstrap-esqe additions ----- */
+/* -- Bootstrap-esqe additions -- */
 
 @media (min-width: 576px) {
 	.position-fixed-sm {
@@ -49,18 +49,24 @@ h1,h2,h3,h4,h5,h6,
 	}
 }
 
+@media (max-width: 768px) {
+	.card-deck-md {
+		flex-flow: column;
+	}
+}
+
 /* -----/Bootstrap-esqe additions/----- */
 
 /* ----- Individual features ----- */
 
 /* Image loading with initial low quality images */
 @keyframes unblurImage {
-	from {filter: blur(2px)}
+	from {filter: blur(5px)}
 	to {filter: blur(0px)}
 }
 @keyframes blurImage {
 	from {filter: blur(0px)}
-	to {filter: blur(2px)}
+	to {filter: blur(5px)}
 }
 
 img.low-quality {
