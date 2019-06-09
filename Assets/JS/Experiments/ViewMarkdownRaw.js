@@ -17,7 +17,9 @@
 // INTENTIONS TO BE ABLE TO DO SO. IF YOU PLAN TO ALLOW USERS
 // TO POST IN MARKDOWN, MAKE SURE TO READ THE FOLLOWING ARTICLE
 // AND SANITIZE THE HTML OUTPUT OF ANY MARKDOWN YOU PROCESS TO
-// KILL SCRIPTS!										   
+// KILL SCRIPTS!
+
+// https://github.com/showdownjs/showdown/wiki/Markdown%27s-XSS-Vulnerability-(and-how-to-mitigate-it)
 
 ///////////////////////////////////////////////////////////////////////////////
 
