@@ -9,10 +9,10 @@
 		<itunes:image href="https://gh.kiansjet.org/Special/Podcasts/WhateverYouSay/WhateverYouSayIcon1-3000.png"/>
 		<language>en-us</language>
 		<itunes:category text="Society &amp; Culture">
-			<itunes:category text="History"></itunes:category>
-			<itunes:category text="Personal Journals"></itunes:category>
-			<itunes:category text="Philosophy"></itunes:category>
-			<itunes:category text="Places &amp; Travel"></itunes:category>
+			<itunes:category text="History"/>
+			<itunes:category text="Personal Journals"/>
+			<itunes:category text="Philosophy"/>
+			<itunes:category text="Places &amp; Travel"/>
 		</itunes:category>
 		<itunes:category text="News &amp; Politics">
 
@@ -24,13 +24,13 @@
 
 		</itunes:category>
 		<itunes:category text="Technology">
-			<itunes:category text="Gadgets"></itunes:category>
-			<itunes:category text="Tech News"></itunes:category>
-			<itunes:category text="Podcasting"></itunes:category>
-			<itunes:category text="Software How-To"></itunes:category>
+			<itunes:category text="Gadgets"/>
+			<itunes:category text="Tech News"/>
+			<itunes:category text="Podcasting"/>
+			<itunes:category text="Software How-To"/>
 		</itunes:category>
 		<itunes:category text="Science &amp; Medicine">
-			<itunes:category text="Social Sciences"></itunes:category>
+			<itunes:category text="Social Sciences"/>
 		</itunes:category>
 		<itunes:explicit>no</itunes:explicit>
 		<itunes:author></itunes:author>
@@ -46,10 +46,26 @@
 		
 		<!-- Episodes/Items -->
 		<item>
-			<itunes:title></itunes:title>
+			<itunes:title>Test Episode</itunes:title>
 			<author></author>
 			<description></description>
-			<enclosure  />
+			<enclosure
+				url="https://drive.google.com/uc?export=download&amp;id=1iK4w7F0VE_ce8WQaBbwh-XgYGDQYN8Su"
+				length="62032"
+				type="audio/mpeg"
+			/>
+			<guid>Generation1Season1Episode1</guid>
+			<pubDate>Wed, 12 Jun 2019 2:00:00 PST</pubDate>
+			<description>
+				<content:encoded>
+					<![CDATA[
+						Yo yo <i>yiggity</i> yo!
+					]]>
+				</content:encoded>
+			</description>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:episode>1</itunes:episode>
+			<itunes:season>1</itunes:season>
 		</item>
 	</channel>
 </rss>
