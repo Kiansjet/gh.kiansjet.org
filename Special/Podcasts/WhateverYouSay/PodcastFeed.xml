@@ -57,11 +57,9 @@
 			<guid>Generation1Season1Episode1</guid>
 			<pubDate>Wed, 12 Jun 2019 2:00:00 PST</pubDate>
 			<description>
-				<content:encoded>
-					<![CDATA[
-						Yo yo <i>yiggity</i> yo!
-					]]>
-				</content:encoded>
+				<![CDATA[
+					Yo yo <i>yiggity</i> yo!
+				]]>
 			</description>
 			<itunes:explicit>false</itunes:explicit>
 			<itunes:episode>1</itunes:episode>
