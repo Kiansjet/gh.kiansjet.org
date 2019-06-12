@@ -9,10 +9,10 @@
 		<itunes:image href="https://gh.kiansjet.org/Special/Podcasts/WhateverYouSay/WhateverYouSayIcon1-3000.png"/>
 		<language>en-us</language>
 		<itunes:category text="Society &amp; Culture">
-			<itunes:category text="History"/>
-			<itunes:category text="Personal Journals"/>
-			<itunes:category text="Philosophy"/>
-			<itunes:category text="Places &amp; Travel"/>
+			<itunes:category text="History"></itunes:category>
+			<itunes:category text="Personal Journals"></itunes:category>
+			<itunes:category text="Philosophy"></itunes:category>
+			<itunes:category text="Places &amp; Travel"></itunes:category>
 		</itunes:category>
 		<itunes:category text="News &amp; Politics">
 
@@ -24,13 +24,13 @@
 
 		</itunes:category>
 		<itunes:category text="Technology">
-			<itunes:category text="Gadgets"/>
-			<itunes:category text="Tech News"/>
-			<itunes:category text="Podcasting"/>
-			<itunes:category text="Software How-To"/>
+			<itunes:category text="Gadgets"></itunes:category>
+			<itunes:category text="Tech News"></itunes:category>
+			<itunes:category text="Podcasting"></itunes:category>
+			<itunes:category text="Software How-To"></itunes:category>
 		</itunes:category>
 		<itunes:category text="Science &amp; Medicine">
-			<itunes:category text="Social Sciences"/>
+			<itunes:category text="Social Sciences"></itunes:category>
 		</itunes:category>
 		<itunes:explicit>no</itunes:explicit>
 		<itunes:author></itunes:author>
