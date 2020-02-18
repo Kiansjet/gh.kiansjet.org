@@ -117,7 +117,7 @@ if (!isRunningLocally) { // Import Google Analytics gtag.js
 // Below is all services
 //
 
-if (!isRunningLocally) { // Custom QuickLinks handler
+if (!isRunningLocally) { // Custom QuickLinks handler. Technically legacy. Use ql.kiansjet.org
 	let urlSearchParams = new URLSearchParams(document.location.search)
 	let customQuickLinkString = urlSearchParams.get('cql')
 	let customQuickLinkDataString = urlSearchParams.get('cqldata')

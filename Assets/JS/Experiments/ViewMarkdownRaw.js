@@ -2,7 +2,6 @@
 // Generates html from a markdown doc and displays it with no additional CSS.
 // Not intended to be permanent. Written before the front end was designed.
 
-
 // __          __     _____  _   _ _____ _   _  _____ 
 // \ \        / /\   |  __ \| \ | |_   _| \ | |/ ____|
 //  \ \  /\  / /  \  | |__) |  \| | | | |  \| | |  __ 
